@@ -25,7 +25,7 @@ public class ScheduleController {
 
     @RequestMapping(value = "/job", method = RequestMethod.POST)
     public ResponseEntity<?> addScheduleJob(@ModelAttribute JobRequest jobRequest) {
-        log.debug("add schedule job :: jobRequest : {}", jobRequest);
+        log.info("add schedule job :: jobRequest : {}", jobRequest);
         if (jobRequest.getJobName() == null) {
             return new ResponseEntity<>(new ApiResponse(false, "Require jobName"),
                     HttpStatus.BAD_REQUEST);

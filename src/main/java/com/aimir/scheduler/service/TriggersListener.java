@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class  TriggersListener implements TriggerListener {
+public class TriggersListener implements TriggerListener {
 
     @Override
     public String getName() {
